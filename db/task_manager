@@ -1,9 +1,15 @@
 ---
 tasks:
-- id: 1
-  title: Complete break work
-  description: "ijigf\r\nfgjldg\r\ngfjk"
 - id: 2
-  title: second task
+  title: second
   description: "does this save correctly\r\nsecond line in the desription"
-total: 2
+- id: 3
+  title: ''
+  description: ''
+- id: 4
+  title: 
+  description: bananas
+- id: 5
+  title: frank
+  description: balls
+total: 5

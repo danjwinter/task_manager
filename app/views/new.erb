@@ -1,6 +1,15 @@
-<form action="/tasks" method="post">
-  <p>Enter a new task:</p>
-  <input type=text name='task[title]'/><br/>
-  <textarea name='task[description]'></textarea><br/>
-  <input type='submit'/>
+<form action="/tasks" method="post" class="text-center">
+  <h2 class="jumbotron panel info panel-info text-center">Enter a new task:</h2>
+  <div class="row">
+    <br>
+  <div class="col-md-3"></div>
+  <div class="well col-md-6">
+  <input placeholder="Task Title" type=text name='task[title]'/><br/>
+  <br>
+  <textarea id="task-description" placeholder="Description"name='task[description]'></textarea><br/>
+  <input value="submit" role="button" class="btn btn-info" type='submit'/>
+</div>
+  <div class="col-md-3"></div>
+  <br>
+</div>
 </form>

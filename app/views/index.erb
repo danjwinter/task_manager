@@ -1,5 +1,16 @@
-<h1>All Tasks</h1>
-
-<% @tasks.each do |task| %>
-  <h3><%= task.id  %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-<% end %>
+<h1 class="bg-info jumbotron panel info panel-info text-center">All Tasks</h1>
+<div class="center-block">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="row">
+      <% @tasks.each do |task| %>
+      <h3 id="task-title-<%= task.id %>" class="well"><%= task.id  %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+      <a  href="/tasks/<%= task.id %>/edit">Edit</a>
+      <form action="/tasks/<%= task.id %>" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="delete"/>
+      </form>
+      <% end %>
+    </div>
+  </div>
+</div>

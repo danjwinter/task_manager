@@ -1,0 +1,19 @@
+.headings {
+  background-color: blue;
+}
+
+.front-image {
+  height: 300px;
+}
+
+.task-title {
+  border-right: solid black;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.task-description {
+  padding-left: 200px;
+  padding-top: 40px;
+  text-align: center;
+}

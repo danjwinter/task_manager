@@ -1,3 +1,8 @@
-<a href="/tasks">Task Index</a>
-<h1><%= @task.title %></h1>
-<p><%= @task.description %></p>
+<div class="row container">
+<a href="/tasks"><button class="btn-lg btn btn-info page-header index-button">Task Index</button></a>
+</div>
+<br>
+<div class="row nav navbar-default">
+<h1 id="task-title" class="col-md-4 task-title"><%= @task.title %></h1>
+<p class="task-description"><%= @task.description %></p>
+</div>
