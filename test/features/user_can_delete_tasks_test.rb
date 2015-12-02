@@ -8,12 +8,14 @@ class UserCanDeleteTasks < FeatureTest
 
     visit '/tasks'
 
-    assert page.has_content?("a title")
-    
+    within('#task-title-1') do
+      assert page.has_content?("a title")
+    end
+
     click_button('delete')
 
     refute page.has_content?("a title")
-
+    refute page.has_css?('#task-title-1')
   end
 
 end
